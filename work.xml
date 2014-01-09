@@ -4,7 +4,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
 <tryton>
     <data>
         <record model="ir.action.act_window" id="act_project_timesheet_line_form2">
-            <field name="name">Project Timesheet Lines</field>
+            <field name="name">Timesheet Lines</field>
             <field name="res_model">timesheet.line</field>
             <field name="domain">[("work", "=", Eval('active_id'))]</field>
         </record>
