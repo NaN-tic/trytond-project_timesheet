@@ -2,6 +2,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "model:ir.action,name:act_project_form2"
+msgid "Projects"
+msgstr "Proyectos"
+
 msgctxt "model:ir.action,name:act_project_timesheet_line_form2"
-msgid "Project Timesheet Lines"
-msgstr "Partes de trabajo del proyecto"
+msgid "Partes de trabajo del proyecto"
+msgstr "Partes de trabajo"
