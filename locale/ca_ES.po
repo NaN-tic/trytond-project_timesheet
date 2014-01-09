@@ -1,0 +1,7 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.action,name:act_project_timesheet_line_form2"
+msgid "Project Timesheet Lines"
+msgstr "Fulls de treball per projecte"
