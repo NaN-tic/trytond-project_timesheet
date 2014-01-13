@@ -3,3 +3,5 @@
 #the full copyright notices and license terms.
 
 from .test_project_timesheet import suite
+
+__all__ = ['suite']
