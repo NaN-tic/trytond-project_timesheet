@@ -7,5 +7,30 @@ msgid "Projects"
 msgstr "Proyectos"
 
 msgctxt "model:ir.action,name:act_project_timesheet_line_form2"
-msgid "Partes de trabajo del proyecto"
+msgid "Timesheet Lines"
 msgstr "Partes de trabajo"
+
+msgctxt "model:ir.action.act_window.domain,name:act_project_form_domain_all"
+msgid "All"
+msgstr "Todos"
+
+msgctxt "model:ir.action.act_window.domain,name:act_project_form_domain_done"
+msgid "Done"
+msgstr "Realizados"
+
+msgctxt ""
+"model:ir.action.act_window.domain,name:act_project_form_domain_opened"
+msgid "Opened"
+msgstr "Abiertos"
+
+msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_all"
+msgid "All"
+msgstr "Todos"
+
+msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_done"
+msgid "Done"
+msgstr "Realizados"
+
+msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_opened"
+msgid "Opened"
+msgstr "Abiertos"
