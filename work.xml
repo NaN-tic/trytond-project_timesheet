@@ -13,5 +13,45 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="model">project.work,-1</field>
             <field name="action" ref="act_project_timesheet_line_form2"/>
         </record>
+
+        <!-- Tabs state project -->
+        <record model="ir.action.act_window.domain" id="act_project_form_domain_opened">
+            <field name="name">Opened</field>
+            <field name="sequence" eval="10"/>
+            <field name="domain">[('state', '=', 'opened')]</field>
+            <field name="act_window" ref="project.act_project_form"/>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_project_form_domain_done">
+            <field name="name">Done</field>
+            <field name="sequence" eval="20"/>
+            <field name="domain">[('state', '=', 'done')]</field>
+            <field name="act_window" ref="project.act_project_form"/>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_project_form_domain_all">
+            <field name="name">All</field>
+            <field name="sequence" eval="9999"/>
+            <field name="domain"></field>
+            <field name="act_window" ref="project.act_project_form"/>
+        </record>
+
+        <!-- Tabs state task -->
+        <record model="ir.action.act_window.domain" id="act_task_form_domain_opened">
+            <field name="name">Opened</field>
+            <field name="sequence" eval="10"/>
+            <field name="domain">[('state', '=', 'opened')]</field>
+            <field name="act_window" ref="project.act_task_form"/>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_task_form_domain_done">
+            <field name="name">Done</field>
+            <field name="sequence" eval="20"/>
+            <field name="domain">[('state', '=', 'done')]</field>
+            <field name="act_window" ref="project.act_task_form"/>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_task_form_domain_all">
+            <field name="name">All</field>
+            <field name="sequence" eval="9999"/>
+            <field name="domain"></field>
+            <field name="act_window" ref="project.act_task_form"/>
+        </record>
     </data>
 </tryton>
