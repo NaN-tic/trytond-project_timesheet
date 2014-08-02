@@ -2,13 +2,21 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:timesheet.line,project_work:"
+msgid "Project Work"
+msgstr "Proyecto\\Tarea"
+
+msgctxt "field:timesheet.work,project_works:"
+msgid "Project Works"
+msgstr "Proyectos\\Tareas"
+
 msgctxt "model:ir.action,name:act_project_form2"
 msgid "Projects"
 msgstr "Proyectos"
 
 msgctxt "model:ir.action,name:act_project_timesheet_line_form2"
 msgid "Timesheet Lines"
-msgstr "Partes de trabajo"
+msgstr "Líneas del proyecto\\tarea"
 
 msgctxt "model:ir.action.act_window.domain,name:act_project_form_domain_all"
 msgid "All"
