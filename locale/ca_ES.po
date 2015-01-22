@@ -2,6 +2,14 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "error:timesheet.work:"
+msgid ""
+"Every work must be in the same company as it's parent work but \"%(child)s\""
+" and \"%(parent)s\" are in different companies."
+msgstr ""
+"Cada tasca ha d'estar a la mateixa empresa que el seu projecte/tasca pare "
+"però \"%(child)s\" i \"%(parent)s\" són d'empreses diferents."
+
 msgctxt "field:timesheet.line,project_work:"
 msgid "Project Work"
 msgstr "Projecte\\Tasca"
@@ -10,11 +18,15 @@ msgctxt "field:timesheet.work,project_works:"
 msgid "Project Works"
 msgstr "Projectes\\Tasques"
 
+msgctxt "model:ir.action,name:act_project_all_timesheet_line"
+msgid "All Timesheet Lines"
+msgstr "Línies del projecte\\tasca - Totes"
+
 msgctxt "model:ir.action,name:act_project_form2"
 msgid "Projects"
 msgstr "Projectes"
 
-msgctxt "model:ir.action,name:act_project_timesheet_line_form2"
+msgctxt "model:ir.action,name:act_project_timesheet_line"
 msgid "Timesheet Lines"
 msgstr "Línies del projecte\\tasca"
 

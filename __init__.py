@@ -12,3 +12,6 @@ def register():
         TimesheetLine,
         Work,
         module='project_timesheet', type_='model')
+    Pool.register(
+        WorkOpenTimesheetLine,
+        module='project_timesheet', type_='wizard')
