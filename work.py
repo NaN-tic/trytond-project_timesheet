@@ -27,7 +27,6 @@ class WorkOpenTimesheetLine(Wizard):
 
         active_id = Transaction().context['active_id']
         works = Work.search([('parent', 'child_of', [active_id])])
-        print works
         action['pyson_domain'] = PYSONEncoder().encode([
                 ('project_work', 'in', [w.id for w in works]),
                 ])
