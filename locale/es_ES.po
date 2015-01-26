@@ -12,15 +12,15 @@ msgstr ""
 
 msgctxt "field:timesheet.line,project_work:"
 msgid "Project Work"
-msgstr "Proyecto\\Tarea"
+msgstr "Tarea (Proyectos)"
 
 msgctxt "field:timesheet.work,project_works:"
 msgid "Project Works"
-msgstr "Proyectos\\Tareas"
+msgstr "Tareas (Proyectos)"
 
 msgctxt "model:ir.action,name:act_project_all_timesheet_line"
 msgid "All Timesheet Lines"
-msgstr "Líneas del proyecto\\tarea - Todas"
+msgstr "Líneas del tarea - Todas"
 
 msgctxt "model:ir.action,name:act_project_form2"
 msgid "Projects"
@@ -28,7 +28,7 @@ msgstr "Proyectos"
 
 msgctxt "model:ir.action,name:act_project_timesheet_line"
 msgid "Timesheet Lines"
-msgstr "Líneas del proyecto\\tarea"
+msgstr "Líneas del tarea (Proyectos)"
 
 msgctxt "model:ir.action.act_window.domain,name:act_project_form_domain_all"
 msgid "All"
