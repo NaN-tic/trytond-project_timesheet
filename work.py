@@ -5,15 +5,8 @@ from trytond.wizard import Wizard, StateAction
 from trytond.pyson import PYSONEncoder
 from trytond.transaction import Transaction
 
-__all__ = ['Work', 'WorkOpenTimesheetLine']
+__all__ = ['WorkOpenTimesheetLine']
 __metaclass__ = PoolMeta
-
-
-class Work:
-    __name__ = 'project.work'
-
-    def get_rec_name(self, name):
-        return self.work.get_rec_name(name)
 
 
 class WorkOpenTimesheetLine(Wizard):

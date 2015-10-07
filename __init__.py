@@ -5,12 +5,10 @@ from trytond.pool import Pool
 from .timesheet import *
 from .work import *
 
-
 def register():
     Pool.register(
         TimesheetWork,
         TimesheetLine,
-        Work,
         module='project_timesheet', type_='model')
     Pool.register(
         WorkOpenTimesheetLine,
