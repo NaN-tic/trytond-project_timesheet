@@ -1,4 +1,9 @@
 Project Timesheet Module
 ########################
 
-Allow to go timesheet lines from project/tasks and order timesheet lines by date DESC.
+From project/task (work) add two keywords:
+
+- Timesheet Lines
+- All Timesheet Lines
+
+Also, add new "open" state in list tree project/task (work)

@@ -2,6 +2,8 @@
 Proyectos. Líneas parte trabajo
 ===============================
 
-Dispone de una acción para ir a las líneas de los partes de trabajo relacionado
-con el proyecto o tarea. También ordena las líneas de los partes de trabajo por
-fecha decreciente.
+1. A tareas/proyectos se dispone de dues nuevas acciones:
+* Todos los partes de trabajo (según trabajo del proyecto/tarea e hijos)
+* Los partes del trabajo (según trabajo del proyecto/tarea)
+
+2. Nuevo estado filtrado en listados de proyectos/tareas

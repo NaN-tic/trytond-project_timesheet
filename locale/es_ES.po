@@ -1,26 +1,10 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "error:timesheet.work:"
-msgid ""
-"Every work must be in the same company as it's parent work but \"%(child)s\""
-" and \"%(parent)s\" are in different companies."
-msgstr ""
-"Cada tarea debe estar en la misma empresa que su proyecto/tarea padre pero "
-"\"%(child)s\" y \"%(parent)s\" son de distintas empresas."
-
-msgctxt "field:timesheet.line,project_work:"
-msgid "Project Work"
-msgstr "Tarea (Proyectos)"
-
-msgctxt "field:timesheet.work,project_works:"
-msgid "Project Works"
-msgstr "Tareas (Proyectos)"
-
 msgctxt "model:ir.action,name:act_project_all_timesheet_line"
 msgid "All Timesheet Lines"
-msgstr "Líneas del tarea - Todas"
+msgstr "Todas líneas de parte de trabajo"
 
 msgctxt "model:ir.action,name:act_project_form2"
 msgid "Projects"
@@ -28,29 +12,12 @@ msgstr "Proyectos"
 
 msgctxt "model:ir.action,name:act_project_timesheet_line"
 msgid "Timesheet Lines"
-msgstr "Líneas del tarea (Proyectos)"
+msgstr "Líneas de parte de trabajo"
 
 msgctxt "model:ir.action.act_window.domain,name:act_project_form_domain_all"
 msgid "All"
 msgstr "Todos"
 
-msgctxt "model:ir.action.act_window.domain,name:act_project_form_domain_done"
-msgid "Done"
-msgstr "Realizados"
-
-msgctxt ""
-"model:ir.action.act_window.domain,name:act_project_form_domain_opened"
-msgid "Opened"
-msgstr "Abiertos"
-
 msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_all"
 msgid "All"
 msgstr "Todos"
-
-msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_done"
-msgid "Done"
-msgstr "Realizados"
-
-msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_opened"
-msgid "Opened"
-msgstr "Abiertos"

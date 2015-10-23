@@ -3,6 +3,7 @@
 The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
+<!--
         <record model="ir.action.act_window" id="act_project_timesheet_line">
             <field name="name">Timesheet Lines</field>
             <field name="res_model">timesheet.line</field>
@@ -15,10 +16,21 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
             <field name="model">project.work,-1</field>
             <field name="action" ref="act_project_timesheet_line"/>
         </record>
+-->
+        <record model="ir.action.wizard" id="act_project_timesheet_line">
+            <field name="name">Timesheet Lines</field>
+            <field name="wiz_name">project.work.open.timesheet.line</field>
+            <field name="model">project.work</field>
+        </record>
+        <record model="ir.action.keyword" id="act_project_open_timesheet_line_keyword">
+            <field name="keyword">form_relate</field>
+            <field name="model">project.work,-1</field>
+            <field name="action" ref="act_project_timesheet_line"/>
+        </record>
 
         <record model="ir.action.wizard" id="act_project_all_timesheet_line">
             <field name="name">All Timesheet Lines</field>
-            <field name="wiz_name">project.work.open.timesheet.line</field>
+            <field name="wiz_name">project.work.open.all.timesheet.line</field>
             <field name="model">project.work</field>
         </record>
         <record model="ir.action.keyword" id="act_project_open_all_timesheet_line_keyword">
@@ -28,22 +40,6 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         </record>
 
         <!-- Tabs state project -->
-        <record model="ir.action.act_window.domain" id="act_project_form_domain_opened">
-            <field name="name">Opened</field>
-            <field name="sequence" eval="10"/>
-            <field name="domain"
-                eval="[('state', '=', 'opened')]"
-                pyson="1"/>
-            <field name="act_window" ref="project.act_project_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="act_project_form_domain_done">
-            <field name="name">Done</field>
-            <field name="sequence" eval="20"/>
-            <field name="domain"
-                eval="[('state', '=', 'done')]"
-                pyson="1"/>
-            <field name="act_window" ref="project.act_project_form"/>
-        </record>
         <record model="ir.action.act_window.domain" id="act_project_form_domain_all">
             <field name="name">All</field>
             <field name="sequence" eval="9999"/>
@@ -52,22 +48,6 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         </record>
 
         <!-- Tabs state task -->
-        <record model="ir.action.act_window.domain" id="act_task_form_domain_opened">
-            <field name="name">Opened</field>
-            <field name="sequence" eval="10"/>
-            <field name="domain"
-                eval="[('state', '=', 'opened')]"
-                pyson="1"/>
-            <field name="act_window" ref="project.act_task_form"/>
-        </record>
-        <record model="ir.action.act_window.domain" id="act_task_form_domain_done">
-            <field name="name">Done</field>
-            <field name="sequence" eval="20"/>
-            <field name="domain"
-                eval="[('state', '=', 'done')]"
-                pyson="1"/>
-            <field name="act_window" ref="project.act_task_form"/>
-        </record>
         <record model="ir.action.act_window.domain" id="act_task_form_domain_all">
             <field name="name">All</field>
             <field name="sequence" eval="9999"/>
