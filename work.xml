@@ -3,21 +3,7 @@
 The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
-<!--
-        <record model="ir.action.act_window" id="act_project_timesheet_line">
-            <field name="name">Timesheet Lines</field>
-            <field name="res_model">timesheet.line</field>
-            <field name="domain"
-                eval="[('project_work', '=', Eval('active_id'))]"
-                pyson="1"/>
-        </record>
-        <record model="ir.action.keyword" id="act_project_open_timesheet_line_keyword">
-            <field name="keyword">form_relate</field>
-            <field name="model">project.work,-1</field>
-            <field name="action" ref="act_project_timesheet_line"/>
-        </record>
--->
-        <record model="ir.action.wizard" id="act_project_timesheet_line">
+        <record model="ir.action.wizard" id="act_project_open_timesheet_line">
             <field name="name">Timesheet Lines</field>
             <field name="wiz_name">project.work.open.timesheet.line</field>
             <field name="model">project.work</field>
@@ -25,7 +11,7 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <record model="ir.action.keyword" id="act_project_open_timesheet_line_keyword">
             <field name="keyword">form_relate</field>
             <field name="model">project.work,-1</field>
-            <field name="action" ref="act_project_timesheet_line"/>
+            <field name="action" ref="act_project_open_timesheet_line"/>
         </record>
 
         <record model="ir.action.wizard" id="act_project_all_timesheet_line">
