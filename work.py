@@ -18,8 +18,8 @@ class WorkOpenTimesheetLine(Wizard):
     def do_open_(self, action):
         Work = Pool().get('project.work')
 
-        active_id = Transaction().context['active_id']
-        works = Work.search([('id', '=', active_id)])
+        active_ids = Transaction().context['active_ids']
+        works = Work.search([('id', 'in', active_ids)])
         action['pyson_domain'] = PYSONEncoder().encode([
                 ('work', 'in', [w.work.id for w in works if w.work]),
                 ])
@@ -36,8 +36,8 @@ class WorkOpenAllTimesheetLine(Wizard):
     def do_open_(self, action):
         Work = Pool().get('project.work')
 
-        active_id = Transaction().context['active_id']
-        works = Work.search([('parent', 'child_of', [active_id])])
+        active_ids = Transaction().context['active_ids']
+        works = Work.search([('parent', 'child_of', active_ids)])
         action['pyson_domain'] = PYSONEncoder().encode([
                 ('work', 'in', [w.work.id for w in works if w.work]),
                 ])
