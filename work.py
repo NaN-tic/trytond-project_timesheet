@@ -1,12 +1,11 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
-from trytond.pool import Pool, PoolMeta
+from trytond.pool import Pool
 from trytond.wizard import Wizard, StateAction
 from trytond.pyson import PYSONEncoder
 from trytond.transaction import Transaction
 
 __all__ = ['WorkOpenTimesheetLine', 'WorkOpenAllTimesheetLine']
-__metaclass__ = PoolMeta
 
 
 class WorkOpenTimesheetLine(Wizard):
