@@ -10,14 +10,14 @@ msgctxt "model:ir.action,name:act_project_form2"
 msgid "Projects"
 msgstr "Projectes"
 
-msgctxt "model:ir.action,name:act_project_timesheet_line"
+msgctxt "model:ir.action,name:act_project_open_timesheet_line"
 msgid "Timesheet Lines"
 msgstr "Línies del full de treball"
 
 msgctxt "model:ir.action.act_window.domain,name:act_project_form_domain_all"
 msgid "All"
-msgstr "Tots"
+msgstr "Tot"
 
 msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_all"
 msgid "All"
-msgstr "Tots"
+msgstr "Tot"

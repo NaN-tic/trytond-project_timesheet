@@ -4,20 +4,20 @@ msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "model:ir.action,name:act_project_all_timesheet_line"
 msgid "All Timesheet Lines"
-msgstr "Todas líneas de parte de trabajo"
+msgstr "Todas las lineas del parte de trabajo"
 
 msgctxt "model:ir.action,name:act_project_form2"
 msgid "Projects"
 msgstr "Proyectos"
 
-msgctxt "model:ir.action,name:act_project_timesheet_line"
+msgctxt "model:ir.action,name:act_project_open_timesheet_line"
 msgid "Timesheet Lines"
 msgstr "Líneas de parte de trabajo"
 
 msgctxt "model:ir.action.act_window.domain,name:act_project_form_domain_all"
 msgid "All"
-msgstr "Todos"
+msgstr "Todo"
 
 msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_all"
 msgid "All"
-msgstr "Todos"
+msgstr "Todo"
