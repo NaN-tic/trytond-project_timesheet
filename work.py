@@ -20,7 +20,8 @@ class WorkOpenTimesheetLine(Wizard):
         active_ids = Transaction().context['active_ids']
         works = Work.search([('id', 'in', active_ids)])
         action['pyson_domain'] = PYSONEncoder().encode([
-                ('work', 'in', [w.work.id for w in works if w.work]),
+                ('work', 'in', [tw.id for w in works
+                        for tw in w.timesheet_works]),
                 ])
 
         return action, {}
@@ -38,7 +39,8 @@ class WorkOpenAllTimesheetLine(Wizard):
         active_ids = Transaction().context['active_ids']
         works = Work.search([('parent', 'child_of', active_ids)])
         action['pyson_domain'] = PYSONEncoder().encode([
-                ('work', 'in', [w.work.id for w in works if w.work]),
+                ('work', 'in', [tw.id for w in works
+                        for tw in w.timesheet_works]),
                 ])
 
         return action, {}
