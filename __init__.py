@@ -2,10 +2,10 @@
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
 from trytond.pool import Pool
-from .work import *
+from . import work
 
 def register():
     Pool.register(
-        WorkOpenTimesheetLine,
-        WorkOpenAllTimesheetLine,
+        work.WorkOpenTimesheetLine,
+        work.WorkOpenAllTimesheetLine,
         module='project_timesheet', type_='wizard')
