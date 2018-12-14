@@ -1,0 +1,23 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.action,name:act_project_all_timesheet_line"
+msgid "All Timesheet Lines"
+msgstr "Alle Zeitpositionen"
+
+msgctxt "model:ir.action,name:act_project_form2"
+msgid "Projects"
+msgstr "Projekte"
+
+msgctxt "model:ir.action,name:act_project_open_timesheet_line"
+msgid "Timesheet Lines"
+msgstr "Zeitpositionen"
+
+msgctxt "model:ir.action.act_window.domain,name:act_project_form_domain_all"
+msgid "All"
+msgstr "Alle"
+
+msgctxt "model:ir.action.act_window.domain,name:act_task_form_domain_all"
+msgid "All"
+msgstr "Alle"
