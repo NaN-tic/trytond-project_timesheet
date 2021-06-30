@@ -4,7 +4,7 @@ msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "model:ir.action,name:act_project_all_timesheet_line"
 msgid "All Timesheet Lines"
-msgstr "Todas las lineas del parte de trabajo"
+msgstr "Todas las líneas del parte de trabajo"
 
 msgctxt "model:ir.action,name:act_project_form2"
 msgid "Projects"
