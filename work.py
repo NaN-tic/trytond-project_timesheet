@@ -5,8 +5,6 @@ from trytond.wizard import Wizard, StateAction
 from trytond.pyson import PYSONEncoder
 from trytond.transaction import Transaction
 
-__all__ = ['WorkOpenTimesheetLine', 'WorkOpenAllTimesheetLine']
-
 
 class WorkOpenTimesheetLine(Wizard):
     'Open All Timesheet Lines from Project Work'
@@ -15,12 +13,8 @@ class WorkOpenTimesheetLine(Wizard):
     open_ = StateAction('timesheet.act_line_form')
 
     def do_open_(self, action):
-        Work = Pool().get('project.work')
-
-        active_ids = Transaction().context['active_ids']
-        works = Work.search([('id', 'in', active_ids)])
         action['pyson_domain'] = PYSONEncoder().encode([
-                ('work', 'in', [tw.id for w in works
+                ('work', 'in', [tw.id for w in self.records
                         for tw in w.timesheet_works]),
                 ])
 
